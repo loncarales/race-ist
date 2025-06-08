@@ -15,3 +15,13 @@ python -m venv venv
 pip install opencv-python mediapipe pyautogui
 
 ```
+pip install pyinstaller
+pyinstaller --onefile --noconsole run.py
+pyinstaller --onefile --noconsole --icon=raceassist.ico steering.py
+
+
+pyinstaller --onefile --noconsole `
+--icon=raceassist.ico `
+--version-file=version.txt `
+--add-data="venv\Lib\site-packages\mediapipe\modules:mediapipe\modules" `
+run.py
