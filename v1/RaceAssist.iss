@@ -16,7 +16,7 @@ WizardSmallImageFile=installer\splash_small.bmp
 [Files]
 Source: "dist\steering.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "installer\readme.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg*.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "venv\Lib\site-packages\mediapipe\modules\*"; DestDir: "{app}\mediapipe\modules"; Flags: recursesubdirs createallsubdirs
 
 [Icons]

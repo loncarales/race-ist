@@ -29,8 +29,8 @@ echo 🔧 Building standalone executable with PyInstaller...
 pyinstaller --onefile --noconsole ^
 --icon="%ICON%" ^
 --version-file="%VERSIONFILE%" ^
---add-data="venv\Lib\site-packages\mediapipe\modules;mediapipe\modules" ^
---add-binary="venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg.dll;." ^
+"--add-data=venv\Lib\site-packages\mediapipe\modules;mediapipe\modules" ^
+"--add-binary=venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg*.dll;." ^
 %ENTRYPOINT%
 
 :: Create output dir
@@ -58,7 +58,7 @@ echo.
 echo [Files]
 echo Source: "dist\%EXENAME%"; DestDir: "{app}"; Flags: ignoreversion
 echo Source: "%README%"; DestDir: "{app}"; Flags: ignoreversion
-echo Source: "venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg.dll"; DestDir: "{app}"; Flags: ignoreversion
+echo Source: "venv\Lib\site-packages\cv2\opencv_videoio_ffmpeg*.dll"; DestDir: "{app}"; Flags: ignoreversion
 echo Source: "venv\Lib\site-packages\mediapipe\modules\*"; DestDir: "{app}\mediapipe\modules"; Flags: recursesubdirs createallsubdirs
 
 echo.
