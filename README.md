@@ -25,3 +25,8 @@ pyinstaller --onefile --noconsole `
 --version-file=version.txt `ws
 --add-data="venv\Lib\site-packages\mediapipe\modules:mediapipe\modules" `
 run.py
+
+
+label everything
+
+
