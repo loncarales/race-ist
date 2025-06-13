@@ -1,5 +1,4 @@
 # 🏎️ **RaceAssist: Gesture-Based Racing Game Controller using MediaPipe + PyAutoGUI**
-![alt text](image.png)
 ### 🔽 Download & Try Now
 > 🎮 RaceAssist – Plug & Play Edition
 
@@ -8,6 +7,9 @@
 RaceAssist is provided "as is", without warranty of any kind, express or implied. 
 The developer shall not be held responsible for any damage, malfunction, or misuse 
 arising from the installation or use of this software.
+
+![alt text](image.png)
+
 
 ## 🔧 Overview
 
