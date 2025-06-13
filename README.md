@@ -3,7 +3,7 @@
 ### 🔽 Download & Try Now
 > 🎮 RaceAssist – Plug & Play Edition
 
-[![Download RaceAssist](https://img.shields.io/badge/Download-RaceAssist.exe-blue?logo=windows)](https://github.com/kintsugidev/RaceAssist/releases/download/v1.0/RaceAssist.exe)
+[![Download RaceAssist](https://img.shields.io/badge/Download-RaceAssist.exe-blue?logo=windows)](https://github.com/kintsugi-programmer/race-ist/releases/tag/v0.2.0-alpha)
 
 RaceAssist is provided "as is", without warranty of any kind, express or implied. 
 The developer shall not be held responsible for any damage, malfunction, or misuse 
