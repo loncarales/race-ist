@@ -150,7 +150,7 @@ def game():
     t4 = threading.Thread(target=display_output)
 
     t1.start()
-    t2.start()dd
+    t2.start()
     t3.start()
     t4.start()
 
