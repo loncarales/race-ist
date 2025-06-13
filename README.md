@@ -5,6 +5,9 @@
 
 [![Download RaceAssist](https://img.shields.io/badge/Download-RaceAssist.exe-blue?logo=windows)](https://github.com/kintsugidev/RaceAssist/releases/download/v1.0/RaceAssist.exe)
 
+RaceAssist is provided "as is", without warranty of any kind, express or implied. 
+The developer shall not be held responsible for any damage, malfunction, or misuse 
+arising from the installation or use of this software.
 
 ## 🔧 Overview
 
@@ -470,3 +473,18 @@ Most terminal or native Windows processes buffer only one keystroke at a time. A
 ## 👨‍💻 Developed At
 
 Built with ❤️ by [Kintsugi Dev Studio](https://www.kintsugidev.studio) > combining computer vision, system design, and human-centered interaction.
+
+## ⚠️ Disclaimer
+
+This software ("RaceAssist") is provided for educational and experimental purposes only.
+
+By using this application, you acknowledge and agree that:
+
+- You are solely responsible for how you use the software.
+- The developer (Siddhant Bali / KintsugiDev.Studio) shall not be held liable for:
+  - Any damage to your computer system, hardware, or peripherals.
+  - Any software crashes, key misfires, or unintended behavior during use.
+  - Any consequences arising from using this tool in games or system interfaces.
+
+⚠️ Use cautiously and **at your own risk**. Test in safe environments.  
+Make sure no important applications are running in the background.
