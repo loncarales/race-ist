@@ -1,5 +1,5 @@
 # 🏎️ **RaceAssist: Gesture-Based Racing Game Controller using MediaPipe + PyAutoGUI**
-
+![alt text](image.png)
 ### 🔽 Download & Try Now
 > 🎮 RaceAssist – Plug & Play Edition
 
@@ -87,7 +87,8 @@ python v9_Stable/run.py
 ---
 
 ## 🕹️ Research and Analysis on RaceAssist: A Vision-Based, Gesture-Driven Game Control System for Real-Time Steering Interfaces Using MediaPipe and PyAutoGUI
-
+![alt text](image-1.png)
+![alt text](image.png)
 
 ---
 
@@ -470,21 +471,32 @@ Most terminal or native Windows processes buffer only one keystroke at a time. A
 
 ---
 
+## LICENSE
+
+MIT License
+
+Copyright (c) 2025 Siddhant Bali
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
 ## 👨‍💻 Developed At
 
 Built with ❤️ by [Kintsugi Dev Studio](https://www.kintsugidev.studio) > combining computer vision, system design, and human-centered interaction.
-
-## ⚠️ Disclaimer
-
-This software ("RaceAssist") is provided for educational and experimental purposes only.
-
-By using this application, you acknowledge and agree that:
-
-- You are solely responsible for how you use the software.
-- The developer (Siddhant Bali / KintsugiDev.Studio) shall not be held liable for:
-  - Any damage to your computer system, hardware, or peripherals.
-  - Any software crashes, key misfires, or unintended behavior during use.
-  - Any consequences arising from using this tool in games or system interfaces.
-
-⚠️ Use cautiously and **at your own risk**. Test in safe environments.  
-Make sure no important applications are running in the background.
