@@ -2,9 +2,9 @@
 ### Software Build `RaceAssist.exe` 
 ```
 pyinstaller --onefile --noconsole `
---icon=raceassist.ico `
---version-file=version.txt `ws
---add-data="venv\Lib\site-packages\mediapipe\modules:mediapipe\modules" `
+--icon=RaceAssist.ico `
+--version-file=version.txt `
+--add-data="..\venv\Lib\site-packages\mediapipe\modules;mediapipe\modules" `
 run.py
 ``` 
 ###  Download Feature for `RaceAssist.exe` in `README.md`
