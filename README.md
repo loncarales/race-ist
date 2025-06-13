@@ -30,3 +30,4 @@ run.py
 label everything
 
 
+Design Evolution and Zone Mapping for RaceAssist: A Hand Gesture-Controlled Racing Interface Using MediaPipe + PyAutoGUI
