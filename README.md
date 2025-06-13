@@ -1,6 +1,6 @@
 # 🏎️ **RaceAssist: Gesture-Based Racing Game Controller using MediaPipe + PyAutoGUI**
 ### 🔽 Download & Try Now
-> 🎮 RaceAssist – Plug & Play Edition
+> 🎮 RaceAssist | Plug & Play Edition
 
 [![Download RaceAssist](https://img.shields.io/badge/Download-RaceAssist.exe-blue?logo=windows)](https://github.com/kintsugi-programmer/race-ist/releases/tag/v0.2.0-alpha)
 
@@ -30,11 +30,73 @@ Whether you're a gamer, developer, or HCI researcher, **RaceAssist** offers a sm
 | Component               | Description                                               |
 | ----------------------- | --------------------------------------------------------- |
 | `RaceAssist.exe`        | ✅ Plug-and-play Windows executable (no setup needed)      |
-| `run.py` (v1–v9)        | 🔧 All Python versions with modular logic                 |
+| `run.py` (v1|v9)        | 🔧 All Python versions with modular logic                 |
 | `requirements.txt`      | 📦 All required Python packages (MediaPipe, OpenCV, etc.) |
 | `RaceAssist.png`        | 🧠 Visual overview of gesture zones across versions       |
 | `RaceAssist.excalidraw` | 📝 Editable diagram file (UI logic flow)                  |
 | `README.md`             | 📘 This documentation                                     |
+
+---
+## Table of Contents
+- [🏎️ **RaceAssist: Gesture-Based Racing Game Controller using MediaPipe + PyAutoGUI**](#️-raceassist-gesture-based-racing-game-controller-using-mediapipe--pyautogui)
+    - [🔽 Download \& Try Now](#-download--try-now)
+  - [🔧 Overview](#-overview)
+  - [📦 What's Included?](#-whats-included)
+  - [Table of Contents](#table-of-contents)
+  - [🚀 Quickstart (For Windows Users)](#-quickstart-for-windows-users)
+  - [🎮 Control Versions at a Glance](#-control-versions-at-a-glance)
+  - [🎯 Ideal For](#-ideal-for)
+  - [🕹️ Research and Analysis on RaceAssist: A Vision-Based, Gesture-Driven Game Control System for Real-Time Steering Interfaces Using MediaPipe and PyAutoGUI](#️-research-and-analysis-on-raceassist-a-vision-based-gesture-driven-game-control-system-for-real-time-steering-interfaces-using-mediapipe-and-pyautogui)
+    - [📄 **Abstract**](#-abstract)
+  - [🚧 Phase 1: Foundation \& Prototyping](#-phase-1-foundation--prototyping)
+  - [🧠 v1 | **Zone-Based Wrist Steering**](#-v1--zone-based-wrist-steering)
+    - [🔧 Features](#-features)
+    - [✅ Pros](#-pros)
+    - [❌ Cons](#-cons)
+  - [🤜 v2 | **Fist Recognition-Based Steering**](#-v2--fist-recognition-based-steering)
+    - [🔧 Features](#-features-1)
+    - [✅ Pros](#-pros-1)
+    - [❌ Cons](#-cons-1)
+  - [🧭 v3 | **Advanced Grid-Zone Wrist Control**](#-v3--advanced-grid-zone-wrist-control)
+    - [🔧 Features](#-features-2)
+    - [✅ Pros](#-pros-2)
+    - [❌ Cons](#-cons-2)
+  - [⚙️ Phase 2: Systemization \& Expansion](#️-phase-2-systemization--expansion)
+  - [🔄 v4 | **Parallel Processing with Threads**](#-v4--parallel-processing-with-threads)
+    - [🔧 Features](#-features-3)
+    - [✅ Pros](#-pros-3)
+    - [❌ Cons](#-cons-3)
+  - [🧱 v5 | **Basic Single-Hand Zone Control**](#-v5--basic-single-hand-zone-control)
+    - [🔧 Features](#-features-4)
+    - [✅ Pros](#-pros-4)
+    - [❌ Cons](#-cons-4)
+  - [🧭 v6 | **Smart Dual-Direction Control**](#-v6--smart-dual-direction-control)
+    - [🔧 Features](#-features-5)
+    - [✅ Pros](#-pros-5)
+    - [❌ Cons](#-cons-5)
+  - [🏁 Phase 3: Stability \& Realism](#-phase-3-stability--realism)
+  - [🧠 v7 | 2D Grid-Based Stable Steering](#-v7--2d-grid-based-stable-steering)
+    - [🔧 Features](#-features-6)
+    - [✅ Pros](#-pros-6)
+    - [❌ Cons](#-cons-6)
+  - [🧱 v8 | 3x3 Grid with Combined Controls](#-v8--3x3-grid-with-combined-controls)
+    - [🔧 Features](#-features-7)
+    - [✅ Pros](#-pros-7)
+    - [❌ Cons](#-cons-7)
+  - [🧭 v9 | Smart 3x3 with Turn Decay Logic](#-v9--smart-3x3-with-turn-decay-logic)
+    - [🔧 Features](#-features-8)
+    - [✅ Pros](#-pros-8)
+    - [❌ Cons](#-cons-8)
+  - [🎯 Final Thoughts](#-final-thoughts)
+  - [🧪 Challenges Faced \& How They Were Addressed](#-challenges-faced--how-they-were-addressed)
+    - [🧩 1. **Single Process Consumes All Key Input**](#-1-single-process-consumes-all-key-input)
+    - [🕒 2. **Detection Latency Even on High-End Laptops**](#-2-detection-latency-even-on-high-end-laptops)
+    - [🌍 3. **Varying Environment Light \& Backgrounds**](#-3-varying-environment-light--backgrounds)
+    - [🎛️ 4. **Directional Intensity Is Too Binary**](#️-4-directional-intensity-is-too-binary)
+    - [🔁 5. **No Natural Recovery Mechanism (Left to Straight to Right)**](#-5-no-natural-recovery-mechanism-left-to-straight-to-right)
+    - [🔮 Future Prospects \& Feature Pipeline](#-future-prospects--feature-pipeline)
+  - [LICENSE](#license)
+  - [👨‍💻 Developed At](#-developed-at)
 
 ---
 
@@ -107,7 +169,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 ---
 ## 🚧 Phase 1: Foundation & Prototyping
 ![alt text](RaceAssist1.png)
-## 🧠 v1 – **Zone-Based Wrist Steering**
+## 🧠 v1 | **Zone-Based Wrist Steering**
 
 ### 🔧 Features
 
@@ -135,7 +197,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🤜 v2 – **Fist Recognition-Based Steering**
+## 🤜 v2 | **Fist Recognition-Based Steering**
 
 ### 🔧 Features
 
@@ -161,7 +223,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🧭 v3 – **Advanced Grid-Zone Wrist Control**
+## 🧭 v3 | **Advanced Grid-Zone Wrist Control**
 
 ### 🔧 Features
 
@@ -194,7 +256,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 ---
 ## ⚙️ Phase 2: Systemization & Expansion
 ![alt text](RaceAssist2.png)
-## 🔄 v4 – **Parallel Processing with Threads**
+## 🔄 v4 | **Parallel Processing with Threads**
 
 ### 🔧 Features
 
@@ -225,7 +287,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🧱 v5 – **Basic Single-Hand Zone Control**
+## 🧱 v5 | **Basic Single-Hand Zone Control**
 
 ### 🔧 Features
 
@@ -252,7 +314,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🧭 v6 – **Smart Dual-Direction Control**
+## 🧭 v6 | **Smart Dual-Direction Control**
 
 ### 🔧 Features
 
@@ -280,7 +342,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 ---
 ## 🏁 Phase 3: Stability & Realism
 ![alt text](RaceAssist3.png)
-## 🧠 v7 – 2D Grid-Based Stable Steering
+## 🧠 v7 | 2D Grid-Based Stable Steering
 
 ### 🔧 Features
 
@@ -307,7 +369,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🧱 v8 – 3x3 Grid with Combined Controls
+## 🧱 v8 | 3x3 Grid with Combined Controls
 
 ### 🔧 Features
 
@@ -335,7 +397,7 @@ This research aims to demonstrate how **accessible hardware and open-source CV t
 
 ---
 
-## 🧭 v9 – Smart 3x3 with Turn Decay Logic
+## 🧭 v9 | Smart 3x3 with Turn Decay Logic
 
 ### 🔧 Features
 
