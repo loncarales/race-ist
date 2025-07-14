@@ -1,19 +1,11 @@
 import cv2
 import mediapipe as mp
 import platform
+import pyautogui
 
-# Import pynput for cross-platform input handling
-try:
-    from pynput.mouse import Button, Listener as MouseListener
-    from pynput.keyboard import Key, Listener as KeyboardListener
-    from pynput import mouse, keyboard
-
-    PYNPUT_AVAILABLE = True
-    print("✅ pynput loaded successfully")
-except ImportError:
-    print("❌ pynput not found. Install with: pip install pynput")
-    PYNPUT_AVAILABLE = False
-    exit(1)
+from pynput.mouse import Button
+from pynput.keyboard import Key
+from pynput import mouse, keyboard
 
 # Platform detection
 PLATFORM = platform.system()
@@ -30,8 +22,6 @@ mouse_controller = mouse.Controller()
 keyboard_controller = keyboard.Controller()
 
 # Screen dimensions for mouse movement
-import pyautogui
-
 screen_width, screen_height = pyautogui.size()
 
 
@@ -43,22 +33,22 @@ def left_click():
 
 
 def press_mouse_button():
-    """Press and hold left mouse button"""
+    """Press and hold the left mouse button"""
     mouse_controller.press(Button.left)
 
 
 def release_mouse_button():
-    """Release left mouse button"""
+    """Release the left mouse button"""
     mouse_controller.release(Button.left)
 
 
 def move_mouse(x, y):
-    """Move mouse to absolute position"""
+    """Move the mouse to absolute position"""
     mouse_controller.position = (x, y)
 
 
 def press_escape():
-    """Press escape key using pynput"""
+    """Press the escape key using pynput"""
     keyboard_controller.press(Key.esc)
     keyboard_controller.release(Key.esc)
 
@@ -481,11 +471,6 @@ if __name__ == "__main__":
     print("Starting Dual Hand Gesture Controller...")
     print(f"Platform: {PLATFORM}")
     print(f"Screen Resolution: {screen_width}x{screen_height}")
-
-    if not PYNPUT_AVAILABLE:
-        print("\n❌ pynput is required for this application")
-        print("Install with: pip install pynput")
-        exit(1)
 
     print("\n️  LEFT HAND GESTURES (Blue):")
     print("- Point with INDEX finger = Left Click")
