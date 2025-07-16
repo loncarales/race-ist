@@ -232,7 +232,7 @@ def dual_hand_gesture_controller():
         'drag_start_pos': None  # Starting position for drag
     }
 
-    # Create window
+    # Create a window
     cv2.namedWindow("Dual Hand Gesture Controller")
 
     # Start MediaPipe hands with 2 hands
@@ -458,7 +458,7 @@ def dual_hand_gesture_controller():
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
-    # Cleanup - make sure to release mouse button if still dragging
+    # Cleanup - make sure to release the mouse button if still dragging
     if right_hand_state['is_dragging']:
         release_mouse_button()
 
